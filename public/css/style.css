@@ -333,3 +333,15 @@ body {
         width: 100%;
     }
 }
+
+.center {
+
+    width: 80%;
+    text-align: justify;
+    margin: 35px auto;
+
+}
+
+hr {
+    border: 1px solid #ababab;
+}
