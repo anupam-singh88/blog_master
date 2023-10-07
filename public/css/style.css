@@ -273,6 +273,10 @@ body {
     width: 100%;
 }
 
+.blogCard h3 {
+    margin: 10px 0;
+}
+
 .blogBtn {
     padding: 7px 9px;
     border: none;

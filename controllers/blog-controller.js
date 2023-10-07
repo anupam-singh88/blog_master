@@ -31,7 +31,7 @@ const editController = async (req, res) => {
     const allBlog = await Blog.find({})
     if (blog.createdBy.toString() !== userId) {
         return res.status(401).render("index", {
-            msg: 'Not Authorized Edit Others Blog',
+            msg: 'Not Authorized To Edit Others Blog',
             blogs: allBlog
         });
     }
@@ -69,7 +69,7 @@ const deleteBlogController = async (req, res) => {
 
     if (checkBlog.createdBy.toString() !== userId) {
         return res.status(401).render("index", {
-            msg: 'Not Authorized Delete Others Blog',
+            msg: 'Not Authorized To Delete Others Blog',
             blogs: allBlog
         });
     }
