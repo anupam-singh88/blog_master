@@ -10,8 +10,9 @@ const { Blog } = require("./models/Blogs");
 
 const port = process.env.port || 3000;
 
+let viewPath = (path.join(path.resolve() + '/views'))
 app.set('view engine', 'ejs');
-
+app.set("views", viewPath);
 app.use(express.static(path.join(path.resolve(), "public")))
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser());
